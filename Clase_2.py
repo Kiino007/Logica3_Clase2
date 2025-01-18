@@ -29,3 +29,33 @@ for i in range(5):
     vector.append(valor) #.Append es una funcion de python que recibe como parametro lo que se va agregar a un arreglo 
     #y lo coloca en la ultima posicion disponible
 print(f"Arreglo ingresado: {vector}")
+
+##################################################################################
+
+#recorrer y modificar valores dentro de un vector arreglo / array
+
+vector2 = [10, 20, 30, 40,50]
+#lo recorremos o iteramos, haciendo alguna operacion en cada uno de los elementos que contiene el arreglo. La mejor
+#Herramienta para hacerlo, es un ciclo for
+
+print("Elementos originales")
+for i in range(len(vector2)):
+    #Len cuenta cuantos elementos tiene el vector y se usa para hacer algunas operaciones basicas
+
+    print(f"indice {i}: {vector2[i]}")
+    #[n] hace referencia a la posicion donde esta cada elemento del arreglo
+
+
+#Modificar cada elemento multiplicandolo por 2 
+for i in range(len(vector2)):
+    vector2[i] *= 2
+
+#Volvemos a imprimirlo
+print("Vector luego de ser modificado: ")
+for i in range(len(vector2)):
+    print("Indice {i}: {vector2[i]}")
+
+
+##################################################################################
+    
+
