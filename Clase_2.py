@@ -58,4 +58,37 @@ for i in range(len(vector2)):
 
 ##################################################################################
     
+#Ejercicio 1: registro de temperaturas
+#Problema: crear un programa que:
+    
+#Solicite al usuario registrar las temperaturas de los ultimos 7 dias
+#Muestre
+#La temperatura promedio
+#El dia con la temperatura mas alta
+#El dia con la temperatura mas baja
+    
+#Crear un arreglo para almacenar las temperaturas
+temperaturas = []
+
+for i in range(7):
+    temp = float(input(f"Ingrese la temperatura del dia {i + 1}"))
+    temperaturas.append(temp)
+
+#Calculamos el promedio
+    promedio = sum(temperaturas) / len(temperaturas)
+
+#Encontramos maximos y minimos
+max_temp = max(temperaturas)
+min_temp = min(temperaturas)
+
+#imprimir los resultados
+print(f"Temperaturas registradas: {temperaturas}")
+print(f"promedio de temperatura: {promedio:.2f}°")
+print(f"Temperatura mas alta : {max_temp}° fue el dia {temperaturas.index(max_temp + 1)}")
+print(f"Temperatura mas baja : {min_temp}° fue el dia {temperaturas.index(min_temp) + 1}")
+
+
+
+###############################################################################################
+
 
